@@ -1,6 +1,6 @@
 # Project-2
 
-# TEAM MEMEBERS
+# Team Members
 
 - Dennis | Dennis-The14th-web
 
