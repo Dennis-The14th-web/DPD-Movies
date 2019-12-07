@@ -4,18 +4,21 @@
 
 <header class="header">
   	<div class="row" id="header_text-box">
-  		<div class="col-7">
-			<h1>PDD</h1>
-		  </div>
+  		<div class="col-3">
+			<h1>DPD</h1>
+		</div>
 
   	
 
 
-  		<div class="col-5" id="add-movie">
+  		<div class="col-6" id="add-movie">
 			<form action='/api/new/movie' method=POST>
 			<input name="name" type="text" class="form-control" id="add-movie-input" placeholder="Add Movie Name">
-		<button id="add-movie-button">Submit</button>
+		<button id="add-movie-button"><img id="add-movie-image" src="assets/images/addButton.png"></button>
 			</form>
+		</div>
+		<div class="col-3">
+			
 		</div>
 	</div>
 </header>
@@ -26,13 +29,13 @@
 <div class="row" id="sort-box">
 	<div id="sortYear-box">
 		<form action='/year' method=GET>
-			<button id="sortYear-button">Sort By Year</button>
+			<button id="sortYear-button"><img id="sortYear-img" src="assets/images/sortYearButton.jpg"></button>
 		</form>
 	</div>
 
 	<div id="sortRating-box">
 		<form action='/rating' method=GET>
-			<button id="sortRating-button">Sort By Rating</button>
+			<button id="sortRating-button"><img id="sortRating-img" src="assets/images/sortByRatingButton.jpg"></button>
 		</form>
 	</div>
 
@@ -52,7 +55,7 @@
       		        		<div class="foot">
 								<p class="movie-title">{{this.movie_name}}</p>
 								<i class="line"></i>
-								<p class="runtime">{{this.movie_time}}</p>
+								<p class="runtime">{{this.movie_time}} - {{this.movie_year}} - imDb {{movie_ratingImdb}}</p>
 							</div>
      		    		</div>
      	    	</div>
@@ -86,11 +89,11 @@
 							<!--Raitings -->
 							<div class="row" id="raitings">
 								<div class="col-3" id="raiting-imdb">
-									
+									<img class="imdb-logo" src="assets/images/imdbLogo.png">
 									<h6 class="imdb-text">{{this.movie_ratingImdb}}</h6>
 								</div>
 								<div class="col-4" id="raiting-roten">
-									
+									<img class="roten-logo" src="assets/images/rotenmatoLogo.png">
 									<h6 class="roten-text">{{this.movie_ratingRotten}}</h6>
 								</div>
 							</div>
@@ -117,7 +120,7 @@
 								<div class="col-md-3">
 								<form action="/api/new/watched/{{this.id}}?_method=PUT" method="POST">
 									<input type="hidden" name="watched" value="true">
-									<button type="submit">Watched</button>
+									<button type="submit"><img id="watched-movie-button" src="assets/images/watchedButton.jpg"></button>
 								</form>
 								</div>
 							<!-- Remove movie button -->
@@ -125,7 +128,7 @@
 								<div class="col-md-3">
 							<form action="/api/new/delete/{{this.id}}?_method=DELETE" method="POST">
 									<input type="hidden" name="watched" value="true">
-									<button type="submit">Trash It</button>
+									<button type="submit"><img id="delete-movie-button" src="assets/images/destroyItButton.jpg"></button>
 								</form>
 								</div>
 								<div class="col-md-6"></div>
@@ -185,7 +188,7 @@
 =============================================== -->
 <footer class="footer">
 	<div class="footer_text-box"> 
-		<p id="footer_text">© Patience, Dennis, Dorian  2019</p>
+		<p id="footer_text">© Dennis, Patience, Dorian  2019</p>
 	</div>
 
 </footer>
@@ -200,7 +203,7 @@ var modal = document.getElementById('myModal'+num);
 // Get the button that opens the modal
 var btn = document.getElementById("trigger-modal"+num);
  modal.style.display = "block";
- 
+ //embedUt(num);
 // Get the <span> element that closes the modal
 var span = document.getElementById('closeit'+num);
 // When the user clicks the button, open the modal 
