@@ -1,4 +1,4 @@
-/controllers/movie_controller.js
-/config/config.json
 /package-lock.json
 /node_modules
+/.env
+/controllers/movie_controller.js
