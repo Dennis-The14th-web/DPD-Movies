@@ -1,9 +1,9 @@
 {
     "development": {
-        "username": "root",
-        "password": "docker",
-        "database": "movies_db",
-        "host": "192.168.99.100",
+        "username": "cry6w8yw5gmgiwvw",
+        "password": "aooov80bmr1oly5a",
+        "database": "qfyf6w7qz7subyz2",
+        "host": "iwqrvsv8e5fz4uni.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
         "dialect": "mysql"
     },
     "production": {

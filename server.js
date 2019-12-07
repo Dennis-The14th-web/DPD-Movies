@@ -20,14 +20,13 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // Favicon
-// console.log("antes de favicon");
 // app.use(favicon(path.join(__dirname, 'public/assets/images', 'favicon.ico')));
-// console.log("después de favicon");
+
 
 // Body Parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-console.log("después de body-parser");
+
 
 // Method override.
 app.use(methodOverride('_method'));
