@@ -2,7 +2,7 @@
 var express = require('express');
 var path = require('path');
 var exphbs = require('express-handlebars');
-var favicon = require('serve-favicon');
+// var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var db = require('./models');
