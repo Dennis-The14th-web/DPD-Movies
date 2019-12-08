@@ -20,8 +20,8 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // Favicon
-app.use(favicon(path.join(__dirname, 'public/assets/images', 'favicon.png')));
-
+app.use(favicon(path.join(__dirname, 'public/assets/images', 'favicon.ico')));
+console.log("favicon up");
 
 // Body Parser
 app.use(bodyParser.json());
