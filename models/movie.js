@@ -1,3 +1,4 @@
+// Import Sequelize library for `Sequelize.literal`.
 var Sequelize = require('sequelize');
 
 const DIALECT = 'mysql';
