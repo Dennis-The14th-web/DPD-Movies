@@ -1,8 +1,8 @@
 #watched-container{
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(212, 206, 206);
     max-height: 220px;
     overflow: auto;
-    border-top: 6px solid rgb(26, 26, 26);;
+    /* border-top: 1px solid rgb(13, 209, 13); */
 } 
 
 .watched-box{
@@ -26,7 +26,7 @@
     width:100px;
     border: 0;
     border-radius: 0;
-    background-color: rgb(154, 154, 154);
+    background-color: rgb(13, 209, 13);
     color:white;
 }
 #watched-form{

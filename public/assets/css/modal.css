@@ -71,7 +71,7 @@ body {
 .close {
     font-family: Arial, Helvetica, sans-serif;
     padding: 25px 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(14, 13, 13);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -79,7 +79,7 @@ body {
 
 .close:hover,
 .close:focus {
-    color: rgb(255, 255, 255);
+    color: rgb(14, 13, 13);
     text-decoration: none;
     cursor: pointer;
     float: right;
