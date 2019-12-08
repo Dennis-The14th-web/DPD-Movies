@@ -44,6 +44,7 @@ body{
 }
 
 #add-movie-button {
+    background: rgb(13, 209, 13);
     margin-top: 15px;
     border-radius:0;
     float: right;
