@@ -1,8 +1,11 @@
 #watched-container{
-    background-color: rgb(41, 37, 37);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTavUwljTy_JygcDGaqYte4AmoR_8cEqusDKehLYZo0uk2kkROi&s);    
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
     max-height: 220px;
     overflow: auto;
-    /* border-top: 1px solid rgb(13, 209, 13); */
+    border-top: 2px solid rgb(168, 13, 13);
 } 
 
 .watched-box{
