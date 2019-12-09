@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 1
+=======
+/package-lock.json
+/node_modules
+/.env
+/controllers/movie_controller.js
+>>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db

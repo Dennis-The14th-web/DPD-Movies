@@ -1,0 +1,177 @@
+@import url("modal.css");
+@import url("movie-box.css");
+@import url("watched-movies.css");
+
+/*
+-------HEADER------------------------------
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    height: 60px;
+}
+
+#logo {
+    font-family: 'Faster One', cursive;
+    color: rgb(13, 209, 13);
+    height: 40px;
+    margin: 10px 0 0 45px;
+}
+
+
+/*add input and button*/
+
+#add-movie-input {
+    margin-top: 15px;
+    margin-right: 45px;
+    border-radius: 0;
+    height: 30px;
+    width: 600px;
+    float: right;
+    background-color: #fff;
+    border: 2px solid rgb(237, 237, 237);
+}
+
+#add-movie-button {
+    background: rgb(13, 209, 13);
+    margin-top: 15px;
+    border-radius:0;
+    float: right;
+    height: 30px;
+}
+
+#add-movie-image {
+    max-width: 30px;
+}
+
+#add-movie-button:hover {
+    opacity: .5;
+}
+
+
+/*end of add button*/
+
+
+/*
+-------MAIN---------------------------------
+*/
+
+
+/*search button*/
+
+#search-movie-input {
+    margin-top: 45px;
+    margin-left: 45px;
+    border-radius: 0;
+    height: 30px;
+    width: 245px;
+    float: left;
+    background-color: rgb(237, 237, 237);
+    border: none;
+}
+
+#search-movie-button {
+    margin-top: 45px;
+    margin-right: 25px;
+    border-radius: 0;
+    float: left;
+    height: 30px;
+}
+
+#search-movie-button:hover {
+    opacity: .5;
+}
+
+
+/*
+-------FOOTER---------------------------------
+*/
+
+.footer {
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid rgb(13, 209, 13);
+    height: 50px;
+    width: 100%;
+}
+
+#footer_text {
+    float: right;
+    margin-right: 25px;
+    margin-top: 18px;
+    font-size: 12px;
+    color: rgb(5, 5, 5);
+    font-family: 'Roboto', sans-serif;
+}
+
+#sort-box {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+#sortYear-img {
+    height: 30px;
+}
+
+#sortYear-img:hover {
+    opacity: 0.5;
+}
+
+#sortRating-box {
+    margin-left: 30px;
+}
+
+#sortRating-img {
+    height: 30px;
+}
+
+#sortRating-img:hover {
+    opacity: 0.5;
+}
+
+
+/* .................MEDIA.................. */
+
+@media only screen 
+  and (max-device-width: 768px) 
+   {
+
+    
+#add-movie-input {
+    margin-top: 15px;
+    margin-right: 0;
+    border-radius: 0;
+    height: 30px;
+    width: 200px;
+    float: right;
+    background-color: rgb(237, 237, 237);
+    border: 2px solid #fff;
+}
+
+#add-movie-button {
+    margin-top: 15px;
+    border-radius: 0;
+    float: right;
+    height: 30px;
+}
+
+#add-movie-image {
+    max-width: 30px;
+}
+
+#add-movie-button:hover {
+    opacity: .5;
+}
+
+  }
