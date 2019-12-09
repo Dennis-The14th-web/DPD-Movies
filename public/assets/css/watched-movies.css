@@ -36,3 +36,12 @@
     border-radius: 0;
     border: none;
 }
+
+
+@media only screen 
+  and (max-device-width: 1024px) 
+   {
+       .col-md-3 {
+            margin: 0 60px 0px 0;
+       }
+   }
