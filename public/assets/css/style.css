@@ -149,105 +149,106 @@ body{
 
 /* .................MEDIA.................. */
 
- @media only screen 
-  and (max-device-width: 1024px) 
-   {
+@media only screen 
+and (max-device-width: 1024px) 
+ {
 
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+  }
+  
+  .header {
+      background-color: rgb(168, 13, 13);
+      border-bottom: 1px solid rgb(13, 209, 13);
+      height: 60px;
+      width: 100%;
+  }
 
-    .header {
-        background-color: rgb(168, 13, 13);
-        border-bottom: 1px solid rgb(13, 209, 13);
-        height: 60px;
-        width: 100%;
-    }
+  #header_text-box{
+    width: auto;
+  }
 
-    #header_text-box{
-      width: auto;
-    }
-
-    #logo {
-        font-family: 'Faster One', cursive;
-        color: rgb(13, 209, 13);
-        height: 40px;
-        margin: 10px 0 0 5px;
-    }
-    
-    
+  #logo {
+      font-family: 'Faster One', cursive;
+      color: rgb(13, 209, 13);
+      height: 40px;
+      margin: 10px 0 0 5px;
+  }
+  
+  
 #add-movie-input {
-    margin-top: 15px;
-    margin-right: 5px;
-    border-radius: 0;
-    height: 30px;
-    width: 110px;
-    float: right;
-    background-color: rgb(237, 237, 237);
-    border: 2px solid rgb(13, 209, 13);
+  margin-top: 15px;
+  margin-right: 5px;
+  border-radius: 0;
+  height: 30px;
+  width: 200px;
+  float: right;
+  background-color: rgb(237, 237, 237);
+  border: 2px solid rgb(13, 209, 13);
 }
 
 #add-movie-button {
-    border:2px solid rgb(13, 209, 13);
-    background: rgb(13, 209, 13);
-    margin-top: 15px;
-    border-radius:0;
-    float: right;
-    height: 30px;
+  border:2px solid rgb(13, 209, 13);
+  background: rgb(13, 209, 13);
+  margin-top: 15px;
+  border-radius:0;
+  float: right;
+  height: 30px;
 }
 
 #add-movie-image {
-    max-width: 30px;
-    height: 27px;
+  max-width: 30px;
+  height: 27px;
 }
 
 #add-movie-button:hover {
-    opacity: .5;
+  opacity: .5;
 }
 
 #search-movie-input {
-    margin-top: 45px;
-    margin-left: 45px;
-    border-radius: 0;
-    height: 30px;
-    width: 245px;
-    float: left;
-    border: none;
+  margin-top: 45px;
+  margin-left: 45px;
+  border-radius: 0;
+  height: 30px;
+  width: 245px;
+  float: left;
+  border: none;
 }
 
 #search-movie-button {
-    margin-top: 45px;
-    margin-right: 25px;
-    border-radius: 0;
-    float: left;
-    height: 30px;
-    
+  margin-top: 45px;
+  margin-right: 25px;
+  border-radius: 0;
+  float: left;
+  height: 30px;
+  
 }
 
 #search-movie-button:hover {
-    opacity: .5;
+  opacity: .5;
 }
 
-  } 
+} 
 
 
+
+@media only screen 
+and (max-device-width: 320px) 
+{
   
- @media only screen 
- and (max-device-width: 320px) 
-  {
-    
-    #add-movie-input {
-        margin-top: 15px;
-        margin-right: 5px;
-        border-radius: 0;
-        height: 30px;
-        width: 60px;
-        float: right;
-        background-color: rgb(237, 237, 237);
-        border: 2px solid rgb(13, 209, 13);
-    }
+  #add-movie-input {
+      margin-top: 15px;
+      margin-right: 5px;
+      border-radius: 0;
+      height: 30px;
+      width: 200px;
+      float: right;
+      background-color: rgb(237, 237, 237);
+      border: 2px solid rgb(13, 209, 13);
   }
+}
+
