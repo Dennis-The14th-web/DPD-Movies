@@ -117,7 +117,7 @@
 								<div class="col-md-3">
 								<form action="/api/new/watched/{{this.id}}?_method=PUT" method="POST">
 									<input type="hidden" name="watched" value="true">
-									<button type="submit"><img id="watched-movie-button" src="assets/images/watchedButton.jpg"></button>
+									<button type="submit" id="watched-movie-button">Mark Watched</button>
 								</form>
 								</div>
 							<!-- Remove movie button -->
@@ -125,7 +125,7 @@
 								<div class="col-md-3">
 							<form action="/api/new/delete/{{this.id}}?_method=DELETE" method="POST">
 									<input type="hidden" name="watched" value="true">
-									<button type="submit"><img id="delete-movie-button" src="assets/images/destroyItButton.jpg"></button>
+									<button type="submit" id="delete-movie-button">Trash It</button>
 								</form>
 								</div>
 								<div class="col-md-6"></div>

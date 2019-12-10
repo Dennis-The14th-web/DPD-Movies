@@ -164,5 +164,9 @@ body {
     height: 30px;
 }
 
+#delete-movie-button:hover {
+    opacity: 0.5;
+}
+
 
 

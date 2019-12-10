@@ -37,11 +37,18 @@
     border: none;
 }
 
+#watched-movie-button{
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: rgb(5, 148, 5);
+    color: #fff;
+    font-weight: bolder;
+    padding: 2px;
+}
 
-@media only screen 
-  and (max-device-width: 1024px) 
-   {
-       .col-md-3 {
-            margin: 0 60px 0px 0;
-       }
-   }
+#delete-movie-button{
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: rgb(5, 148, 5);
+    color: #fff;
+    font-weight: bolder;
+    padding: 2px;
+}
