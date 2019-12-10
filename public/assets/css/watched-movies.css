@@ -1,8 +1,11 @@
 #watched-container{
-    background-color: rgb(212, 206, 206);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTavUwljTy_JygcDGaqYte4AmoR_8cEqusDKehLYZo0uk2kkROi&s);    
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
     max-height: 220px;
     overflow: auto;
-    /* border-top: 1px solid rgb(13, 209, 13); */
+    border-top: 2px solid rgb(168, 13, 13);
 } 
 
 .watched-box{
@@ -32,4 +35,20 @@
 #watched-form{
     border-radius: 0;
     border: none;
+}
+
+#watched-movie-button{
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: rgb(5, 148, 5);
+    color: #fff;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+#delete-movie-button{
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: rgb(5, 148, 5);
+    color: #fff;
+    font-weight: bolder;
+    padding: 2px;
 }
