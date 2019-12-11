@@ -1,19 +1,6 @@
 <!-- ==============================================
 		HEADER
 =============================================== -->
-<<<<<<< HEAD
-<header class="header">
-  	<div class="row" id="header_text-box">
-  		<div class="col-7">
-			<img id="logo" src="assets/images/logo2.png">
-		  </div>
-  		<div class="col-5" id="add-movie">
-			<form action='/api/new/movie' method=POST>
-			<input name="name" type="text" class="form-control" id="add-movie-input" placeholder="Add Movie Name">
-		<button id="add-movie-button"><img id="add-movie-image" src="assets/images/addBtn.jpg"></button>
-			</form>
-		</div>
-=======
 
 <header class="header">
   	<div class="row" id="header_text-box">
@@ -30,7 +17,6 @@
 		</div>
 			
 		</div>
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 	</div>
 </header>
 <main >
@@ -40,21 +26,6 @@
 <div class="row" id="sort-box">
 	<div id="sortYear-box">
 		<form action='/year' method=GET>
-<<<<<<< HEAD
-			<button id="sortYear-button"><img id="sortYear-img" src="assets/images/sortYearBtn.jpg"></button>
-		</form>
-	</div>
-	<div id="sortRating-box">
-		<form action='/rating' method=GET>
-			<button id="sortRating-button"><img id="sortRating-img" src="assets/images/sortRatingBtn.jpg"></button>
-		</form>
-	</div>
-</div>
-<div class="row" id="movies-container">
-	<!--movie box -->
-	{{#each movies}}
-		{{#unless this.watched}}
-=======
 			<button id="sortYear-button"><img id="sortYear-img" src="assets/images/sortByYearButton02.jpg"></button>
 		</form>
 	</div>
@@ -72,7 +43,6 @@
 	{{#each movies}}
 		{{#unless this.watched}}
 	
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 		<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12" id="movie-box">
         	<div class="box gallery">
 				<div class="card">
@@ -82,44 +52,28 @@
       		        		<div class="foot">
 								<p class="movie-title">{{this.movie_name}}</p>
 								<i class="line"></i>
-<<<<<<< HEAD
-								<p class="runtime">{{this.movie_time}}</p>
-=======
 								<p class="runtime">{{this.movie_time}} - {{this.movie_year}} - imDb {{movie_ratingImdb}}</p>
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 							</div>
      		    		</div>
      	    	</div>
         	</div>
 		</div>
-<<<<<<< HEAD
-	<div id="myModal{{@index}}" class="modal">
-  		<!-- Modal content -->
-  		<div class="modal-content">
-=======
 
 	<div id="myModal{{@index}}" class="modal">
 
   		<!-- Modal content -->
   		<div class="modal-content">
    
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
     		<div class="row" id="modal-body">
       			<!--poster -->
 					<div class="col-5" id="search-movie">
 						<img id="selected-movie-poster" src={{this.movie_poster}}>
 					</div>
-<<<<<<< HEAD
-					<div class="col-7" id="movie-scroll">
-						<!--close BTN -->
-						<span id='closeit{{@index}}' class="close">&times;</span>
-=======
 
 					<div class="col-7" id="movie-scroll">
 						<!--close BTN -->
 						<span id='closeit{{@index}}' class="close">&times;</span>
 						
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 						<div class="container" id="modal-movie-info-box">
 							<!--Movie Title -->
 							<h2 class="movie-title" id="modal-movie-title">{{this.movie_name}}</h2>
@@ -136,11 +90,7 @@
 									<h6 class="imdb-text">{{this.movie_ratingImdb}}</h6>
 								</div>
 								<div class="col-4" id="raiting-roten">
-<<<<<<< HEAD
-									<img class="roten-logo" src="assets/images/rotenLogo.png">
-=======
 									<img class="roten-logo" src="assets/images/rotenmatoLogo.png">
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 									<h6 class="roten-text">{{this.movie_ratingRotten}}</h6>
 								</div>
 							</div>
@@ -167,21 +117,7 @@
 								<div class="col-md-3">
 								<form action="/api/new/watched/{{this.id}}?_method=PUT" method="POST">
 									<input type="hidden" name="watched" value="true">
-<<<<<<< HEAD
-<<<<<<< HEAD
-									<button type="submit"><img id="watched-movie-button" src="assets/images/watchedBtn.jpg"></button>
-								</form>
-								</div>
-							<!-- Remove movie button -->
-								<div class="col-md-3">
-							<form action="/api/new/delete/{{this.id}}?_method=DELETE" method="POST">
-									<input type="hidden" name="watched" value="true">
-									<button type="submit"><img id="delete-movie-button" src="assets/images/trashItBtn.jpg"></button>
-=======
-									<button type="submit"><img id="watched-movie-button" src="assets/images/watchedButton.jpg"></button>
-=======
 									<button type="submit" id="watched-movie-button">Mark Watched</button>
->>>>>>> 5bb5429caf6222688efe406edebe4a1915d9cb60
 								</form>
 								</div>
 							<!-- Remove movie button -->
@@ -189,29 +125,11 @@
 								<div class="col-md-3">
 							<form action="/api/new/delete/{{this.id}}?_method=DELETE" method="POST">
 									<input type="hidden" name="watched" value="true">
-<<<<<<< HEAD
-									<button type="submit"><img id="delete-movie-button" src="assets/images/destroyItButton.jpg"></button>
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
-=======
 									<button type="submit" id="delete-movie-button">Trash It</button>
->>>>>>> 5bb5429caf6222688efe406edebe4a1915d9cb60
 								</form>
 								</div>
 								<div class="col-md-6"></div>
 							</div>
-<<<<<<< HEAD
-						<!-- trailer -->
-							<iframe id="trailer-box" src="https://www.youtube.com/embed/{{this.movie_trailer}}"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-				</div>
-    		</div>
-  		</div>
-	</div>
-		{{/unless}}
-	{{/each}}
-		 <!--end of movie box -->
-</div>
-=======
 							
 							
 						<!-- trailer -->
@@ -236,7 +154,6 @@
 
 </div>
 
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 <!-- ==============================================
 		WATCHED MOVIES
 =============================================== -->
@@ -247,42 +164,26 @@
        			<div class="watched-box">
 					<div class="card" id="watched-form">
 						<form action="/{{this.id}}?_method=PUT" method="POST" >
-<<<<<<< HEAD
-							<img class="img-responsive" id="watched-movies" src={{this.movie_poster}}>
-                        	<a href="/" class="overlay link" id="unwatch"><button type="submit" class="btn" id="unwatch-btn">Unwatch it</button></a>
-=======
                         	
 							<img class="img-responsive" id="watched-movies" src={{this.movie_poster}}>
                         	<a href="/" class="overlay link" id="unwatch"><button type="submit" class="btn" id="unwatch-btn">Unwatch it</button></a>
 
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
                     	</form>
 					</div>
 				</div>
 			</div>
 		{{/if}}
 	{{/each}}
-<<<<<<< HEAD
-</div>
-</main>
-=======
 
 </div>
 	
 	
 </main>
 
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 <!-- ==============================================
 		FOOTER
 =============================================== -->
 <footer class="footer">
-<<<<<<< HEAD
-	<div class="footer_text-box">
-		<p id="footer_text">© Asley Calixte, Raj Narula, Mariela Pascual   2018</p>
-	</div>
-</footer>
-=======
 	<div class="footer_text-box"> 
 		<p id="footer_text">© Dennis, Patience, Dorian  2019</p>
 	</div>
@@ -290,7 +191,6 @@
 </footer>
 
 
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 <script>
 function modalDisplay(num) {
 		console.log(num);
@@ -303,14 +203,9 @@ var btn = document.getElementById("trigger-modal"+num);
  //embedUt(num);
 // Get the <span> element that closes the modal
 var span = document.getElementById('closeit'+num);
-<<<<<<< HEAD
-// When the user clicks the button, open the modal
-//btn.onclick = function() {
-=======
 // When the user clicks the button, open the modal 
 //btn.onclick = function() {
    
->>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
 //}
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

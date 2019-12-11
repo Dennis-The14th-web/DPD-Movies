@@ -44,14 +44,13 @@ router.get('/rating', function(req, res) {
     });
 });
 
-var queryUrl = import("./keys")
-var options = import("./keys")
+
 // POST route which calls Sequelize's create method with the movie name given.
 router.post('/api/new/movie', function(req, res) {
     
     var movieName = req.body.name;
 
-    var queryUrl = "http://omdbapi.com/?apikey=process.env.API_KEY&t=" + movieName;
+    var queryUrl = "http://omdbapi.com/?apikey=d69e1782&t=" + movieName;
     request(queryUrl, function(error, response, body) {
        
 
@@ -69,7 +68,7 @@ router.post('/api/new/movie', function(req, res) {
                 url: 'https://api.themoviedb.org/3/movie/' + imdbId + '/videos',
                 qs: {
                     language: 'en-US',
-                    api_key: 'process.env.api_key'
+                    api_key: 'd50548305ff81a83c1c65efa4ce59583'
                 },
                 body: '{}'
             };
