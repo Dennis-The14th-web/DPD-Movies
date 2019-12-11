@@ -17,20 +17,17 @@
 
 <header class="header">
   	<div class="row" id="header_text-box">
-  		<div class="col-4">
-			<h1 id="logo">DPD<small>movies</small></h1>
+  		<div class="col-7">
+			<h2 id="logo">DPD<small>movies</small></h2>
 		</div>
 
-  	
 
-
-  		<div class="col-6" id="add-movie">
+  		<div class="col-5" id="add-movie">
 			<form action='/api/new/movie' method=POST>
 			<input name="name" type="text" class="form-control" id="add-movie-input" placeholder="Add Movie Name">
 		<button id="add-movie-button"><img id="add-movie-image" src="assets/images/addButton.png"></button>
 			</form>
 		</div>
-		<div class="col-2">
 			
 		</div>
 >>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
@@ -171,6 +168,7 @@
 								<form action="/api/new/watched/{{this.id}}?_method=PUT" method="POST">
 									<input type="hidden" name="watched" value="true">
 <<<<<<< HEAD
+<<<<<<< HEAD
 									<button type="submit"><img id="watched-movie-button" src="assets/images/watchedBtn.jpg"></button>
 								</form>
 								</div>
@@ -181,6 +179,9 @@
 									<button type="submit"><img id="delete-movie-button" src="assets/images/trashItBtn.jpg"></button>
 =======
 									<button type="submit"><img id="watched-movie-button" src="assets/images/watchedButton.jpg"></button>
+=======
+									<button type="submit" id="watched-movie-button">Mark Watched</button>
+>>>>>>> 5bb5429caf6222688efe406edebe4a1915d9cb60
 								</form>
 								</div>
 							<!-- Remove movie button -->
@@ -188,8 +189,12 @@
 								<div class="col-md-3">
 							<form action="/api/new/delete/{{this.id}}?_method=DELETE" method="POST">
 									<input type="hidden" name="watched" value="true">
+<<<<<<< HEAD
 									<button type="submit"><img id="delete-movie-button" src="assets/images/destroyItButton.jpg"></button>
 >>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
+=======
+									<button type="submit" id="delete-movie-button">Trash It</button>
+>>>>>>> 5bb5429caf6222688efe406edebe4a1915d9cb60
 								</form>
 								</div>
 								<div class="col-md-6"></div>

@@ -4,5 +4,8 @@
 /package-lock.json
 /node_modules
 /.env
+<<<<<<< HEAD
 /controllers/movie_controller.js
 >>>>>>> b5b2cac407c1478ade916e7f049b81ef9c0a16db
+=======
+>>>>>>> 5bb5429caf6222688efe406edebe4a1915d9cb60
