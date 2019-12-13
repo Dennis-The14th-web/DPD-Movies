@@ -56,7 +56,7 @@ router.post('/api/new/movie', function(req, res) {
     // console.log(`API KEY: ${keys.OMDB_API_KEY}`);
     // keys.imdb_api_key
 
-    var queryUrl = `http://omdbapi.com/?omdb_api_key=${keys.OMDB_API_KEY}&t=${movieName}`;    
+    var queryUrl = `http://omdbapi.com/?apikey=${keys.OMDB_API_KEY}&t=${movieName}`;    
     request(queryUrl, function(error, response, body) {
        
 
@@ -75,7 +75,7 @@ router.post('/api/new/movie', function(req, res) {
                 url: 'https://api.themoviedb.org/3/movie/' + imdbId + '/videos',
                 qs: {
                     language: 'en-US',
-                    imdb_api_key: keys.IMDB_API_KEY
+                    api_key: keys.IMDB_API_KEY
                 },
                 body: '{}'
             };
