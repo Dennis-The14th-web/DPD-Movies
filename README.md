@@ -6,19 +6,19 @@ A Full stack web application that serves as a personal media library to keep tra
 
 ### Home page view :point_down:
 
-<a href="https://pddmovieappthe14web.herokuapp.com/" img src="assets/css/images/dpdmoviephoto.PNG" ></a>
+<a href="https://pddmovieappthe14web.herokuapp.com/"><img src="assets/css/images/dpdmoviephoto.PNG" ></a>
 
 ### Modal page view :point_down:
 
-<img src="assets/css/images/DPDmodalview.PNG" >
+<img src="assets/css/images/DPDmodalview.PNG" />
 
 ### Back end view :point_down:
 
-<img src="assets/css/images/jawsDB.PNG" >
+<img src="assets/css/images/jawsDB.PNG" />
 
 ### Illusration on watched movies on back end view :point_down:
 
-<img src="assets/css/images/jawsDB01.PNG" >
+<img src="assets/css/images/jawsDB01.PNG" />
 
 ### Technologies:
 
@@ -48,7 +48,7 @@ A Full stack web application that serves as a personal media library to keep tra
 
 -  Users will also be able to delete any movie of thier choice in the app
 
-- We applied the CRUD method on this application to get it's required result.
+- We applied the CRUD method in this application to get it's required result.
  
 ### Authors
 
