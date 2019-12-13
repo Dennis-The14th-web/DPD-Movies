@@ -2,23 +2,23 @@
 
 ## DPDmovies
 
-A Full stack web application that serves as a personal media library to keep track of movies desired to watch and those watched already.
+Is a Full stack web application that serves as a personal media library to keep track of movies desired to watch and those watched already.
 
 ### Home page view :point_down:
 
-<a href="https://pddmovieappthe14web.herokuapp.com/"><img src="assets/css/images/dpdmoviephoto.PNG" ></a>
+<a href="https://pddmovieappthe14web.herokuapp.com/"><img src="public/assets/css/images/dpdmoviephoto.PNG" ></a>
 
 ### Modal page view :point_down:
 
-<img src="assets/css/images/DPDmodalview.PNG" />
+<img src="public/assets/css/images/DPDmodalview.PNG" />
 
 ### Back end view :point_down:
 
-<img src="assets/css/images/jawsDB.PNG" />
+<img src="public/assets/css/images/jawsDB.PNG" />
 
 ### Illusration on watched movies on back end view :point_down:
 
-<img src="assets/css/images/jawsDB01.PNG" />
+<img src="public/assets/css/images/jawsDB01.PNG" />
 
 ### Technologies:
 
