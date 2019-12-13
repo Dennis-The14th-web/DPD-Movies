@@ -1,7 +1,9 @@
 // NPM dependencies and Express router function.
+require("dotenv").config();
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+var keys = require('../keys')
 
 // Data model definition
 var db = require('../models');
@@ -44,23 +46,27 @@ router.get('/rating', function(req, res) {
     });
 });
 
-var queryUrl = import("./keys")
-var options = import("./keys")
+// var queryUrl = import("./keys")
+// var options = import("./keys")
 // POST route which calls Sequelize's create method with the movie name given.
 router.post('/api/new/movie', function(req, res) {
     
     var movieName = req.body.name;
 
-    var queryUrl = "http://omdbapi.com/?apikey=process.env.API_KEY&t=" + movieName;
+    // console.log(`API KEY: ${keys.OMDB_API_KEY}`);
+    // keys.imdb_api_key
+
+    var queryUrl = `http://omdbapi.com/?omdb_api_key=${keys.OMDB_API_KEY}&t=${movieName}`;    
     request(queryUrl, function(error, response, body) {
        
 
         if (!error && JSON.parse(body).Response !== 'False') {
             console.log(JSON.parse(body));
 
-            var imdbId = JSON.parse(body).imdbID;
+            var imdbId = JSON.parse(body);
+            
 
-            console.log(imdbId);
+            console.log(imdbId);    
 
             var videos = "";
 
@@ -69,7 +75,7 @@ router.post('/api/new/movie', function(req, res) {
                 url: 'https://api.themoviedb.org/3/movie/' + imdbId + '/videos',
                 qs: {
                     language: 'en-US',
-                    api_key: 'process.env.api_key'
+                    imdb_api_key: keys.IMDB_API_KEY
                 },
                 body: '{}'
             };

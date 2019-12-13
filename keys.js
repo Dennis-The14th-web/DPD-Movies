@@ -1,4 +1,4 @@
 exports.keys = {
-    api_key: process.env.api_key,
-    api_key: process.env.API_KEY
+    omdb_api_key: "process.env.OMDB_API_KEY",
+    imdb_api_key: "process.env.IMDB_API_KEY"
 };
