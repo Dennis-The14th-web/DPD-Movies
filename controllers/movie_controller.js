@@ -3,7 +3,7 @@ require("dotenv").config();
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-var keys = require('../keys')
+// var keys = require('../keys')
 
 // Data model definition
 var db = require('../models');
@@ -56,14 +56,15 @@ router.post('/api/new/movie', function(req, res) {
     // console.log(`API KEY: ${keys.OMDB_API_KEY}`);
     // keys.imdb_api_key
 
-    var queryUrl = `http://omdbapi.com/?apikey=${keys.OMDB_API_KEY}&t=${movieName}`;    
+    var queryUrl = `http://omdbapi.com/?apikey=${keys.OMDB_API_KEY}&t=${movieName}`; 
+      
     request(queryUrl, function(error, response, body) {
        
 
         if (!error && JSON.parse(body).Response !== 'False') {
             console.log(JSON.parse(body));
 
-            var imdbId = JSON.parse(body);
+            var imdbId = JSON.parse(body).imdbID;
             
 
             console.log(imdbId);    

@@ -1,27 +1,55 @@
 # Project-2
 
-### Requirements
+## DPDmovies
 
-- Your project must:
+A Full stack web application that serves as a personal media library to keep track of movies desired to watch and those watched already.
 
-   * Use a Node and Express Web Server.
+### Home page view :point_down:
 
-   * Be backed by a MySQL Database an ORM (not necessarily Sequelize).
+<a href="https://pddmovieappthe14web.herokuapp.com/" img src="assets/css/images/dpdmoviephoto.PNG" ></a>
 
-   * Have both GET and POST routes for retrieving and adding new data.
+### Modal page view :point_down:
 
-   * Be deployed using Heroku (with Data).
+<img src="assets/css/images/DPDmodalview.PNG" >
 
-   * Utilize at least one new library, package, or technology that we haven’t       discussed.
+### Back end view :point_down:
 
-   * Have a polished frontend / UI.
+<img src="assets/css/images/jawsDB.PNG" >
 
-   * Have folder structure that meets MVC Paradigm.
+### Illusration on watched movies on back end view :point_down:
 
-   * Meet good quality coding standards (indentation, scoping, naming).
+<img src="assets/css/images/jawsDB01.PNG" >
 
-   * Must not expose sensitive API key information on the server.
+### Technologies:
 
+-  Node.js (Javascript environment)
+
+-  Express.js (Server framework)
+
+-  Sequelize (ORM)
+
+-  Handlebars (Templating engine)
+
+-  Heroku (Cloud platform)
+
+-  JawsDB (Heroku database add-on)
+
+-  Bootstrap 4 (Front-end framework)
+
+-  Cards, Modal
+
+-  MySQL (RDBMS)
+
+### Description
+
+-  DPDmovies is allows you to add a movie, which then pulls it's info from the omdb API 
+
+-  It also allows users to watch trailers and mark as watched and also unwatch same movie
+
+-  Users will also be able to delete any movie of thier choice in the app
+
+- We applied the CRUD method on this application to get it's required result.
+ 
 ### Authors
 
 - Dennis | Dennis-The14th-web
