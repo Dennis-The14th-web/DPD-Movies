@@ -6,19 +6,19 @@ Is a Full stack web application that serves as a personal media library to keep 
 
 ### Home page view :point_down:
 
-<a href="https://pddmovieappthe14web.herokuapp.com/"><img src="public/assets/css/images/dpdmoviephoto.PNG" ></a>
+   <a href="https://pddmovieappthe14web.herokuapp.com/"><img src="images/dpdmoviephoto.PNG" ></a>
 
 ### Modal page view :point_down:
 
-<img src="public/assets/css/images/DPDmodalview.PNG" />
+   <img src="images/DPDmodalview.PNG" >
 
 ### Back end view :point_down:
 
-<img src="public/assets/css/images/jawsDB.PNG" />
+   <img src="images/jawsDB.PNG" >
 
 ### Illusration on watched movies on back end view :point_down:
 
-<img src="public/assets/css/images/jawsDB01.PNG" />
+   <img src="images/jawsDB01.PNG" >
 
 ### Technologies:
 
