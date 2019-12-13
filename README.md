@@ -13,7 +13,7 @@ Is a Full stack web application that serves as a personal media library to keep 
 ### Modal page view 
 
 
-   <img src="public/assets/images/DPDmodalview.PNG" >
+   <img src="public/assets/images/modalviewiamge.PNG" >
 
 
 ### Back end view 
@@ -55,7 +55,7 @@ Is a Full stack web application that serves as a personal media library to keep 
 
 ### Description
 
--  DPDmovies allows users to add a movie, which then pulls it's info from the omdb API. 
+-  DPDmovies allows users to add a movie, and then pulls it's info from the omdb API. 
 
 -  It also allows users to watch trailers of searched movies via thier imdbID. 
 
