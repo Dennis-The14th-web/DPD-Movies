@@ -22,7 +22,7 @@ Is a Full stack web application that serves as a personal media library to keep 
    <img src="public/assets/images/jawsDB.PNG" >
 
 
-### Illusration of watched movies from back end view 
+### Illustration of watched movies from back end view 
 
 
    <img src="public/assets/images/jawsDB01.PNG" >
