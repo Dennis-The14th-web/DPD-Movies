@@ -62,7 +62,7 @@ router.post('/api/new/movie', function(req, res) {
         if (!error && JSON.parse(body).Response !== 'False') {
             console.log(JSON.parse(body));
 
-            var imdbId = JSON.parse(body);
+            var imdbId = JSON.parse(body).imdbID;
             
 
             console.log(imdbId);    
