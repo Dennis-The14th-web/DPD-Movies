@@ -1,4 +1,4 @@
-// NPM dependencies and Express router function.
+//  NPM dependencies and Express router function.
 var express = require('express');
 var router = express.Router();
 var request = require('request');
@@ -7,7 +7,7 @@ var request = require('request');
 // Data model definition
 var db = require('../models');
 
-// GET route calls using Sequelize's findAll method.
+// GET route calls useing Sequelize's findAll method.
 // This route hands the data it receives to handlebars so index can be rendered.
 router.get('/', function(req, res) {
     db.Movie.findAll({
@@ -48,24 +48,20 @@ router.get('/rating', function(req, res) {
 
 // POST route which calls Sequelize's create method with the movie name given.
 router.post('/api/new/movie', function(req, res) {
-    
+
     var movieName = req.body.name;
 
-    
-
-    
     var queryUrl = "http://omdbapi.com/?apikey=d69e1782&t=" + movieName;
-      
+
     request(queryUrl, function(error, response, body) {
-       
+
 
         if (!error && JSON.parse(body).Response !== 'False') {
             console.log(JSON.parse(body));
 
             var imdbId = JSON.parse(body).imdbID;
-            
 
-            console.log(imdbId);    
+            console.log(imdbId);
 
             var videos = "";
 
@@ -74,7 +70,7 @@ router.post('/api/new/movie', function(req, res) {
                 url: 'https://api.themoviedb.org/3/movie/' + imdbId + '/videos',
                 qs: {
                     language: 'en-US',
-                    api_key: 'd50548305ff81a83c1c65efa4ce59583'
+                    api_key: '59a14d8ec28bb0f6ad054e709ae51e75',
                 },
                 body: '{}'
             };
