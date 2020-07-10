@@ -51,7 +51,7 @@ router.post('/api/new/movie', function(req, res) {
 
     var movieName = req.body.name;
 
-    var queryUrl = "http://omdbapi.com/?apikey=982cdc11&t=" + movieName;
+    var queryUrl = "http://omdbapi.com/?apikey=40e9cece&t=" + movieName;
 
     request(queryUrl, function(error, response, body) {
 
