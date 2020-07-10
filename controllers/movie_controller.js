@@ -51,7 +51,7 @@ router.post('/api/new/movie', function(req, res) {
 
     var movieName = req.body.name;
 
-    var queryUrl = "http://omdbapi.com/?apikey=d69e1782&t=" + movieName;
+    var queryUrl = "http://omdbapi.com/?apikey=982cdc11&t=" + movieName;
 
     request(queryUrl, function(error, response, body) {
 
@@ -79,11 +79,12 @@ router.post('/api/new/movie', function(req, res) {
 
                 if (error) res.redirect('/');
 
-
+                
                 if (!JSON.parse(result).results) {
                     // res.send('SOMETHING WENT WRONG');
                     res.redirect('/')
-                } else {
+                }
+                 else {
                     videos = JSON.parse(result).results[0].key;
                     console.log(videos);
                     db.Movie.create({
