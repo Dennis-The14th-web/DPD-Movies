@@ -2,6 +2,9 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+var key = require('../keys')
+
+console.log(key);
 
 
 // Data model definition
@@ -18,6 +21,7 @@ router.get('/', function(req, res) {
             movies: data
         };
         res.render('index', hbsObject);
+        // console.log(hbsObject);
     });
 });
 
@@ -48,10 +52,10 @@ router.get('/rating', function(req, res) {
 
 // POST route which calls Sequelize's create method with the movie name given.
 router.post('/api/new/movie', function(req, res) {
-
+   
     var movieName = req.body.name;
 
-    var queryUrl = "http://omdbapi.com/?apikey=40e9cece&t=" + movieName;
+    var queryUrl = 'http://omdbapi.com/?apikey=d69e1782&t=' + movieName;   
 
     request(queryUrl, function(error, response, body) {
 
@@ -60,33 +64,35 @@ router.post('/api/new/movie', function(req, res) {
             console.log(JSON.parse(body));
 
             var imdbId = JSON.parse(body).imdbID;
+            // res.send(imdbId);
 
-            console.log(imdbId);
+            // console.log(imdbId);
 
             var videos = "";
-
             var options = {
                 method: 'GET',
-                url: 'https://api.themoviedb.org/3/movie/' + imdbId + '/videos',
+                url: `https://api.themoviedb.org/3/movie/${imdbId}/videos?api_key=6d041c38963c0fe11a5c29f97f5aff94`,
                 qs: {
                     language: 'en-US',
-                    api_key: '59a14d8ec28bb0f6ad054e709ae51e75',
                 },
-                body: '{}'
+                // body: '{}'
             };
+            // console.log(imdbId);
+            // console.log(options);
+            
 
             request(options, function(error, response, result) {
-
-                if (error) res.redirect('/');
+                // console.log(request.response);
+                if (error) return res.send();
 
                 
-                if (!JSON.parse(result).results) {
-                    // res.send('SOMETHING WENT WRONG');
+                if(!JSON.parse(result).results) {
+                    res.send('SOMETHING WENT WRONG');
                     res.redirect('/')
                 }
                  else {
                     videos = JSON.parse(result).results[0].key;
-                    console.log(videos);
+                    // console.log(videos);
                     db.Movie.create({
                         movie_name: JSON.parse(body).Title,
                         movie_poster: JSON.parse(body).Poster,
@@ -102,6 +108,7 @@ router.post('/api/new/movie', function(req, res) {
 
                     }).then(function() {
                         res.redirect('/');
+                        
                     });
 
                 }
