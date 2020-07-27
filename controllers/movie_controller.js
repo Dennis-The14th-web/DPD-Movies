@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-var key = require('../keys')
+// var key = require('../keys')
 
 console.log(key);
 
