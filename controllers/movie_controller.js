@@ -4,7 +4,7 @@ var router = express.Router();
 var request = require('request');
 // var key = require('../keys')
 
-console.log(key);
+// console.log(key);
 
 
 // Data model definition
