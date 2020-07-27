@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-// var key = require('../keys')
+var key = require('../keys')
 // console.log(key);
 
 
@@ -54,7 +54,7 @@ router.post('/api/new/movie', function(req, res) {
    
     var movieName = req.body.name;
 
-    var queryUrl = 'http://omdbapi.com/?apikey=d69e1782&t=' + movieName;   
+    var queryUrl = `http://omdbapi.com/?apikey=${process.env.API_KEY,}&t=`  + movieName;   
 
     request(queryUrl, function(error, response, body) {
 
@@ -70,7 +70,7 @@ router.post('/api/new/movie', function(req, res) {
             var videos = "";
             var options = {
                 method: 'GET',
-                url: `https://api.themoviedb.org/3/movie/${imdbId}/videos?api_key=6d041c38963c0fe11a5c29f97f5aff94`,
+                url: `https://api.themoviedb.org/3/movie/${imdbId}/videos?api_key=${process.env.api_Key}`,
                 qs: {
                     language: 'en-US',
                 },
