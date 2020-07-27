@@ -3,7 +3,6 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 // var key = require('../keys')
-
 // console.log(key);
 
 
@@ -87,7 +86,7 @@ router.post('/api/new/movie', function(req, res) {
 
                 
                 if(!JSON.parse(result).results) {
-                    res.send('SOMETHING WENT WRONG');
+                    // res.send('SOMETHING WENT WRONG');
                     res.redirect('/')
                 }
                  else {
