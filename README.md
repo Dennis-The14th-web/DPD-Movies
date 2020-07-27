@@ -1,5 +1,3 @@
-# Project-2
-
 ## DPDmovies
 
 Is a Full stack web application that serves as a personal media library to keep track of movies desired to watch and those watched already.
