@@ -27,7 +27,7 @@
     "mysql2": "^2.0.2",
     "omdb": "^0.8.0",
     "request": "^2.88.0",
-    "sequelize": "^5.15.1",
+    "sequelize": "^6.29.0",
     "serve-favicon": "^2.5.0"
   }
 }
